@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS, WEIGHTS } from '../../constants';
+import { COLORS } from '../../constants';
 import { formatPrice, pluralize, isNewShoe } from '../../utils';
 import Spacer from '../Spacer';
 
@@ -89,8 +89,8 @@ const Row = styled.div`
 `;
 
 const Name = styled.h3`
-  font-weight: ${WEIGHTS.medium};
-  color: ${COLORS.gray[900]};
+  font-weight: var(--font-weight-medium);
+  color: var(--colors-gray-900);
 `;
 
 const Price = styled.span`
@@ -99,12 +99,12 @@ const Price = styled.span`
 `;
 
 const ColorInfo = styled.p`
-  color: ${COLORS.gray[700]};
+  color: var(--colors-gray-700);
 `;
 
 const SalePrice = styled.span`
-  font-weight: ${WEIGHTS.medium};
-  color: ${COLORS.primary};
+  font-weight: var(--font-weight-medium);
+  color: var(--colors-primary);
 `;
 
 const Flag = styled.div`
@@ -116,16 +116,16 @@ const Flag = styled.div`
   line-height: 32px;
   padding: 0 10px;
   font-size: ${14 / 18}rem;
-  font-weight: ${WEIGHTS.bold};
-  color: ${COLORS.white};
+  font-weight: var(--font-weight-bold);
+  color: var(--colors-white);
   border-radius: 2px;
 `;
 
 const SaleFlag = styled(Flag)`
-  background-color: ${COLORS.primary};
+  background-color: var(--colors-primary);
 `;
 const NewFlag = styled(Flag)`
-  background-color: ${COLORS.secondary};
+  background-color: var(--colors-secondary);
 `;
 
 export default ShoeCard;

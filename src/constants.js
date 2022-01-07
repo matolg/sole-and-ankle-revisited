@@ -9,6 +9,7 @@ export const COLORS = {
   },
   primary: 'hsl(340deg 65% 47%)',
   secondary: 'hsl(240deg 60% 63%)',
+  overlay: 'hsla(220deg 5% 40% / 0.8)'
 };
 
 export const WEIGHTS = {
@@ -16,3 +17,16 @@ export const WEIGHTS = {
   medium: 600,
   bold: 800,
 };
+
+// in pixels
+export const BREAKPOINTS = {
+  phoneMax: 600,
+  tabletMax: 950,
+  laptopMax: 1300,
+}
+
+export const QUERIES = {
+  phoneAndBelow: `(max-width: ${BREAKPOINTS.phoneMax / 16}rem)`,
+  tabletAndBelow: `(max-width: ${BREAKPOINTS.tabletMax / 16}rem)`,
+  laptopAndBelow: `(max-width: ${BREAKPOINTS.laptopMax / 16})rem)`,
+}
