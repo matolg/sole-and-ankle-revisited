@@ -69,6 +69,7 @@ const Menu = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 `;
 
 const Nav = styled.nav`
